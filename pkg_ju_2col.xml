@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="package" version="3.9" method="upgrade">
+	<name>pkg_ju_2col</name>
+	<packagename>ju_2col</packagename>
+	<packager>Joomla! Ukraine</packager>
+	<copyright>Copyright (C) 2019-2021 Joomla! Ukraine. All Rights Reserved.</copyright>
+	<packageremail>denys@joomla-ua.org</packageremail>
+    <packagerurl>https://joomla-ua.org</packagerurl>
+    <author>Denys Nosov, Joomla! Ukraine</author>
+    <authorEmail>denys@joomla-ua.org</authorEmail>
+    <authorUrl>https://joomla-ua.org</authorUrl>
+	<license>GNU General Public License version 2 or later.</license>
+	<creationDate>@date@</creationDate>
+	<description>Template JU2col for SEBLOD CCK - https://joomla-ua.org</description>
+	<version>@version@</version>
+	<scriptfile>pkg_script.php</scriptfile>
+	<languages folder="languages">
+		<language tag="en-GB">en-GB/en-GB.pkg_ju_2col.sys.ini</language>
+	</languages>
+	<files folder="extensions">
+		<file type="plugin" id="plg_system_blank" group="system">plg_system_blank.zip</file>
+		<file type="template" id="tpl_ju_2col" client="site">tpl_ju_2col.zip</file>
+		<file type="package" id="jusebcck">pkg_jusebcck_v@jusebcck@.zip</file>
+	</files>
+	<update>https://joomla-ua.org/update/pkg/ju2col.xml</update>
+    <updateservers>
+        <server type="extension" priority="1" name="JU2col">https://joomla-ua.org/update/pkg/ju2col.xml</server>
+    </updateservers>
+</extension>
